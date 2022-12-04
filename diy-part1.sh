@@ -11,11 +11,14 @@
 #
 
 # Uncomment a feed source
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+
 
 # Add a feed source
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 sed -i '$a src-git hongwenjun https://github.com/hongwenjun/openwrt-luci-kcp-udp' feeds.conf.default
+sed -i '$a src-git lede_ax https://github.com/coolsnowwolf/openwrt-gl-ax1800' feeds.conf.default
+
